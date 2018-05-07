@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:id="@+id/activity_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.example.kys_31.team.activity.WelcomeActivity">
+    <com.example.kys_31.team.custom.CustomViewPager
+        android:id="@+id/cvp_bgPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.kys_31.team.custom.CustomViewPager>
+
+    <LinearLayout
+        android:gravity="end"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/start_tv"
+            android:background="@drawable/tv_skip_welcome"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:text="进入"
+            android:textColor="@color/style_red"
+            android:layout_weight="0.00"/>
+    </LinearLayout>
+
+</RelativeLayout>

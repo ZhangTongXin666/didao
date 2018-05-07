@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--外围-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--第一行-->
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp">
+            <com.example.kys_31.team.custom.RoundImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="40dp"
+                android:visibility="gone"
+                android:layout_height="40dp"
+                android:id="@+id/riv_head"
+                android:src="@mipmap/main"
+                android_custom:type="circle"/>
+
+            <TextView
+                android:layout_marginRight="50dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:text="527672827"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_account"/>
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:src="@mipmap/icon_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

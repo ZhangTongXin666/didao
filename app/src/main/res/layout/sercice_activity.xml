@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:android_custom="http://schemas.android.com/apk/res/com.example.kys_31.team"
+              xmlns:hyman="http://schemas.android.com/apk/res/com.example.kys_31.team"
+              android:background="@mipmap/service"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--外围-->
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--第一行-->
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.example.kys_31.team.custom.RoundImageView
+                android:layout_weight="1"
+                android:id="@+id/riv_head"
+                android:src="@mipmap/logos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android_custom:type="circle"/>
+            <Space
+                android:layout_weight="8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/iv_exit"
+                android:src="@mipmap/exit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+        <!--第二行-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/sendtype"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView6"/>
+
+            <EditText
+                android:textColor="@color/blue"
+                android:paddingLeft="5dp"
+                android:inputType="text"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:hint="快递类型"
+                android:id="@+id/et_sendtype"
+                android:background="@drawable/et_sendtype"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/iv_add"
+                android:src="@mipmap/add"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+        <!--第三行-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="3"
+                android:src="@mipmap/getnumber"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <EditText
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:focusable="false"
+                android:hint="提货码或手机后四位"
+                android:id="@+id/et_getnumber"
+                android:background="@drawable/et_sendtype"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <Space
+                android:layout_weight="7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <!--第四行-->
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/domitory"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <EditText
+                android:enabled="false"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:layout_weight="5"
+                android:hint="详细信息"
+                android:singleLine="false"
+                android:id="@+id/et_detail_Message"
+                android:background="@drawable/et_sendtype"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"/>
+
+            <Space
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <!--第五行-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_weight="1"
+                android:background="@drawable/bt_service"
+                android:id="@+id/bt_service"
+                android:text="递到"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+           <Space
+               android:layout_weight="2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+            <Button
+                android:layout_weight="1"
+                android:background="@drawable/bt_service"
+                android:text="悬浮窗"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_window"/>
+        </LinearLayout>
+        <!--第六行-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+        <!--第七行-->
+        <LinearLayout
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/smallwindow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView7"/>
+
+            <TextView
+                android:textSize="17sp"
+                android:textColor="@color/skyblue"
+                android:text="《递到》的生活方式。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_theme"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

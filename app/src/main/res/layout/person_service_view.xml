@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@mipmap/personphone"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--外围-->
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginBottom="60dp"
+            android:gravity="center_vertical"
+            android:background="@color/registertitle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:text="返回"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="80dp"
+                android:text="客服中心"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <!--第一行-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/person_service"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="客服一"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:gravity="center"
+                android:layout_weight="3.00"
+                android:text="152316#####"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/iv_one"
+                android:layout_weight="1"
+                android:src="@mipmap/phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+        <!--第二行-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/person_service"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView8"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="客服二"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="3"
+                android:text="151306#####"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_two"/>
+
+            <ImageView
+                android:id="@+id/iv_two"
+                android:layout_weight="1"
+                android:src="@mipmap/phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+        <!--第三行-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/person_service"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView9"/>
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="客服三"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="3"
+                android:text="153316#####"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_three"/>
+
+            <ImageView
+                android:id="@+id/iv_three"
+                android:layout_weight="1"
+                android:src="@mipmap/phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+        <!--第一行-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/person_service"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView10"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="客服四"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView10"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="3"
+                android:text="150316#####"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_four"/>
+
+            <ImageView
+                android:id="@+id/iv_four"
+                android:layout_weight="1"
+                android:src="@mipmap/phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

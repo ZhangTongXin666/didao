@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--外围-->
+    <LinearLayout
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:background="@color/ivory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:padding="10dp"
+            android:text="@string/neadcheckthing"
+            android:textSize="18sp"
+            android:scrollbars="none"
+            android:textColor="@color/black"
+            android:id="@+id/tv_dutyExplain"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/rg_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rb_need"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="需要验货" />
+            <Space
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rb_noNeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不需要验货" />
+        </RadioGroup>
+
+        <!--按钮-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="确定"
+                android:id="@+id/bt_sure"
+                android:background="@drawable/bt_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:background="@drawable/bt_service"
+                android:text="取消"
+                android:id="@+id/bt_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

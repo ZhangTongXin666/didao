@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cricle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/en"
+    android:id="@+id/person_info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout">
+        <Button
+            android:id="@+id/back_bt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:text="个人信息"
+            android:gravity="center_horizontal"
+            android:textColor="#8e8989"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+    <com.example.kys_31.team.custom.RoundImageView
+        android:id="@+id/edit_head_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        cricle:border_width="2dp"
+        cricle:border_color="@color/wheat"/>
+
+    <EditText
+        android:id="@+id/edit_name_et"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_name_tv"
+        android:layout_below="@id/edit_head_img"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/edit_name_tv"
+        android:background="@drawable/edit_style"
+        android:textSize="18sp"
+        android:lines="1"
+        android:inputType="text"
+        android:drawableEnd="@mipmap/namefour"/>
+
+    <TextView
+        android:id="@+id/edit_phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_name_tv"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:text="联系方式:"
+        android:textSize="28sp"
+        android:layout_centerVertical="true"/>
+
+
+    <TextView
+        android:id="@+id/edit_address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_phone_tv"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:text="送货地址:"
+        android:textSize="28sp"
+        android:layout_centerVertical="true"/>
+
+    <EditText
+        android:id="@+id/edit_address_et"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/edit_style"
+        android:textSize="18sp"
+        android:layout_toEndOf="@+id/edit_address_tv"
+        android:layout_centerVertical="true"
+        android:layout_alignBaseline="@+id/edit_address_tv"
+        android:lines="2"
+        android:inputType="text"
+        android:drawableEnd="@mipmap/addressone"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/edit_address_et"
+    android:layout_marginTop="100dp">
+    <Button
+        android:id="@+id/edit_change_password_bt"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button_seletor"
+       android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:text="修改密码"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/edit_save_bt"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button_seletor"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="85dp"
+        android:text="保  存"
+        android:textSize="18sp"
+         />
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/edit_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="67dp"
+        android:text="姓        名:"
+        android:textSize="28sp"
+        android:layout_below="@+id/edit_head_img"
+        android:layout_alignStart="@+id/edit_phone_tv"/>
+
+    <EditText
+        android:id="@+id/edit_phone_et"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/edit_style"
+        android:textSize="18sp"
+        android:lines="1"
+        android:inputType="number"
+        android:drawableEnd="@mipmap/phoneone"
+        android:layout_alignBaseline="@+id/edit_phone_tv"
+        android:layout_alignBottom="@+id/edit_phone_tv"
+        android:layout_toEndOf="@+id/edit_phone_tv"/>
+
+
+</RelativeLayout>
