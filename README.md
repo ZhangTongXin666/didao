@@ -1,4 +1,9 @@
 # 递到
+递到 已上传至应用宝  下载链接
+pc端：http://android.myapp.com/myapp/detail.htm?apkName=com.example.kys_31.team
+移动端：http://a.app.qq.com/o/simple.jsp?pkgname=com.example.kys_31.team
+二维码：
+<img src= "http://o.app.qq.com/image/microQr.png?template=1&url=http%3A%2F%2Fa.app.qq.com%2Fo%2Fsimple.jsp%3Fpkgname%3Dcom.example.kys_31.team&imageUrl=&pkgName=com.example.kys_31.team" width=100 heigth=100>
 <br><br>
 <h2>悬浮窗功能</h2>
 <h4>获得手机状态栏高度：</h4>
