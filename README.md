@@ -1,8 +1,8 @@
 # 递到
 <br><br>
-<h2>悬浮窗功能<h2>
-1、获得手机状态栏高度：
-//通过反射获取状态栏高度
+<h2>悬浮窗功能</h2>
+<h4>获得手机状态栏高度：</h4>
+通过反射获取状态栏高度
 Class<?> c=Class.forName("com.android.internal.R$dimen");
 
 Object o=c.newInstance();
@@ -11,10 +11,10 @@ Field field=c.getField("status_bar_height");
 
 int x =(Integer)field.get(o); //得到的是px值
 
-statusBarHeight=getResources().getDimensionPixelSize(x); //将x值乘以 density 得到相应的dp值。
+statusBarHeight=getResources().getDimensionPixelSize(x); 将x值乘以 density 得到相应的dp值。
 
 
-2、实现思路：
+<h4>2、实现思路<h4>
 
 （1）自定义ViewGroup，为了复写onTouchEvent(......) 监听滑动事件获得x, y值；
 
